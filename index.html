@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows Cleaner Pro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="logo">
+                <h1>🧹 Windows Cleaner Pro</h1>
+                <p>Professional PC Cleaning & Optimization Tools</p>
+            </div>
+            <div class="user-info">
+                <span id="userPlan" class="plan-badge">FREE</span>
+                <span id="userName">Cargando...</span>
+                <button onclick="openPlans()" class="plans-btn">💳 Ver Planes</button>
+                <button onclick="logout()">Cerrar Sesión</button>
+            </div>
+        </header>
+
+        <!-- Main Title -->
+        <div class="main-title">
+            <h1>Windows Cleaner Pro</h1>
+            <p>Herramienta profesional de optimización para Windows 11</p>
+            <span class="version-badge">v2.0.0</span>
+        </div>
+
+        <!-- Chat IA Button -->
+        <div class="chat-button-container">
+            <button onclick="openChatIA()" class="chat-ia-button">
+                💬 Chat con IA - Asistente
+            </button>
+        </div>
+
+        <!-- Tools Grid -->
+        <div class="tools-grid">
+            <!-- Tool 1: DISM Repair -->
+            <div class="tool-card" onclick="runTool('dism')">
+                <div class="tool-icon">🔧</div>
+                <h3>DISM Repair</h3>
+                <p>Reparación de imagen del sistema Windows</p>
+            </div>
+
+            <!-- Tool 2: SFC Scan -->
+            <div class="tool-card" onclick="runTool('sfc')">
+                <div class="tool-icon">🛡️</div>
+                <h3>SFC Scan</h3>
+                <p>Verificación de archivos del sistema</p>
+            </div>
+
+            <!-- Tool 3: Disk Cleanup -->
+            <div class="tool-card" onclick="runTool('diskcleanup')">
+                <div class="tool-icon">💾</div>
+                <h3>Disk Cleanup</h3>
+                <p>Limpieza profunda de disco</p>
+            </div>
+
+            <!-- Tool 4: Temp Files -->
+            <div class="tool-card" onclick="runTool('tempfiles')">
+                <div class="tool-icon">🗑️</div>
+                <h3>Archivos Temporales</h3>
+                <p>Elimina archivos temporales del sistema</p>
+            </div>
+
+            <!-- Tool 5: DNS Flush -->
+            <div class="tool-card" onclick="runTool('dnsflush')">
+                <div class="tool-icon">🌐</div>
+                <h3>DNS Flush</h3>
+                <p>Limpia y renueva caché DNS</p>
+            </div>
+
+            <!-- Tool 6: System Info -->
+            <div class="tool-card" onclick="runTool('systeminfo')">
+                <div class="tool-icon">📊</div>
+                <h3>System Info</h3>
+                <p>Información del sistema</p>
+            </div>
+
+            <!-- Tool 7: Windows Update -->
+            <div class="tool-card" onclick="runTool('windowsupdate')">
+                <div class="tool-icon">🔄</div>
+                <h3>Windows Update</h3>
+                <p>Actualiza Windows</p>
+            </div>
+
+            <!-- Tool 8: Display Settings -->
+            <div class="tool-card" onclick="runTool('displaysettings')">
+                <div class="tool-icon">🖥️</div>
+                <h3>Display Settings</h3>
+                <p>Configuración de pantalla</p>
+            </div>
+        </div>
+
+        <!-- Console Output -->
+        <div id="consoleOutput" class="console-output">
+            <p>📋 Consola de Sistema. Selecciona una herramienta para comenzar.</p>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>Designed by <strong>Pedro IT Expert in CyberSeguridad</strong></p>
+        </footer>
+    </div>
+
+    <script src="renderer.js"></script>
+</body>
+</html>

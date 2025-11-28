@@ -1,0 +1,53 @@
+{
+  "name": "windows-cleaner-pro",
+  "version": "2.0.1",
+  "description": "Professional Windows System Cleaner and Optimizer",
+  "main": "main.js",
+  "author": "Pedro IT Expert in CyberSeguridad",
+  "license": "MIT",
+  "homepage": "https://pedro-it95.github.io/windows-cleaner-pro-website/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Pedro-IT95/windows-cleaner-pro.git"
+  },
+  "scripts": {
+    "start": "electron .",
+    "build:win": "electron-builder --win",
+    "dist": "electron-builder --win"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "electron-store": "^8.1.0"
+  },
+  "devDependencies": {
+    "electron": "^27.0.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.pedroit.windowscleanerpro",
+    "productName": "Windows Cleaner Pro",
+    "copyright": "Copyright © 2025 Pedro IT Solutions",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": ["x64"]
+        }
+      ],
+      "icon": "assets/icon.ico",
+      "publisherName": "Pedro IT Solutions"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Windows Cleaner Pro",
+      "installerIcon": "assets/icon.ico",
+      "uninstallerIcon": "assets/icon.ico"
+    }
+  }
+}
