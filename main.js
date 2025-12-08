@@ -10,7 +10,7 @@ const { spawn, exec } = require('child_process');
 const axios = require('axios');
 
 // Backend URL
-const BACKEND_URL = 'https://windows-cleaner-pro-backend.onrender.com';
+const BACKEND_URL = 'https://api.windowscleanerpro.com'';
 
 let mainWindow;
 let currentUser = null;

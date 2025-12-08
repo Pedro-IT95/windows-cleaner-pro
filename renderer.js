@@ -7,7 +7,7 @@
 const { ipcRenderer } = require('electron');
 
 // API Configuration
-const API_URL = 'https://windows-cleaner-pro-backend.onrender.com';
+const API_URL = 'https://api.windowscleanerpro.com'';
 
 console.log('=========================================');
 console.log('  Windows Cleaner Pro v2.0.1');
