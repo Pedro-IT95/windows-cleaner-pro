@@ -1,19 +1,19 @@
 {
-  "name": "windows-cleaner-pro",
-  "version": "2.0.1",
-  "description": "Professional Windows System Cleaner and Optimizer",
+  "name": "cuban-technology-cleaner",
+  "version": "2.0.2",
+  "description": "Professional System Cleaner and Optimizer by Pedro IT Solutions",
   "main": "main.js",
-  "author": "Pedro IT Expert in CyberSeguridad",
+  "author": "Pedro IT Solutions",
   "license": "MIT",
-  "homepage": "https://pedro-it95.github.io/windows-cleaner-pro-website/",
+  "homepage": "https://windowscleanerpro.com",
   "repository": {
     "type": "git",
     "url": "https://github.com/Pedro-IT95/windows-cleaner-pro.git"
   },
   "scripts": {
     "start": "electron .",
-    "build:win": "electron-builder --win",
-    "dist": "electron-builder --win"
+    "build": "electron-builder --win",
+    "build:appx": "electron-builder --win appx"
   },
   "dependencies": {
     "axios": "^1.6.0",
@@ -24,8 +24,8 @@
     "electron-builder": "^24.13.3"
   },
   "build": {
-    "appId": "com.pedroit.windowscleanerpro",
-    "productName": "Windows Cleaner Pro",
+    "appId": "com.pedroitsolutions.cubantechnologycleaner",
+    "productName": "Cuban Technology Cleaner",
     "copyright": "Copyright © 2025 Pedro IT Solutions",
     "directories": {
       "output": "dist"
@@ -33,19 +33,25 @@
     "win": {
       "target": [
         {
-          "target": "nsis",
+          "target": "appx",
           "arch": ["x64"]
         }
       ],
       "icon": "assets/icon.ico",
       "publisherName": "Pedro IT Solutions"
     },
+    "appx": {
+      "displayName": "Cuban Technology Cleaner",
+      "publisherDisplayName": "Pedro IT Solutions",
+      "applicationId": "CubanTechnologyCleaner",
+      "identityName": "PedroITSolutions.CubanTechnologyCleaner"
+    },
     "nsis": {
       "oneClick": false,
       "allowToChangeInstallationDirectory": true,
       "createDesktopShortcut": true,
       "createStartMenuShortcut": true,
-      "shortcutName": "Windows Cleaner Pro",
+      "shortcutName": "Cuban Technology Cleaner",
       "installerIcon": "assets/icon.ico",
       "uninstallerIcon": "assets/icon.ico"
     }
