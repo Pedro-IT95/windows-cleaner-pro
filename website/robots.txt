@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://pedro-it95.github.io/windows-cleaner-pro-website/sitemap.xml

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Política de Privacidad - Cuban Technology Cleaner</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 30px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+            font-weight: 700;
+            color: white;
+            text-decoration: none;
+        }
+
+        .logo span {
+            font-size: 30px;
+            margin-right: 10px;
+        }
+
+        .content {
+            max-width: 900px;
+            margin: 120px auto 80px;
+            padding: 0 30px;
+        }
+
+        h1 {
+            font-size: 42px;
+            color: #667eea;
+            margin-bottom: 20px;
+        }
+
+        .last-updated {
+            color: #888;
+            margin-bottom: 40px;
+            font-style: italic;
+        }
+
+        h2 {
+            font-size: 28px;
+            color: #667eea;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            font-size: 22px;
+            color: #333;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        ul {
+            margin-bottom: 20px;
+            padding-left: 30px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        .highlight-box {
+            background: #f0f4ff;
+            padding: 25px;
+            border-radius: 15px;
+            border-left: 5px solid #667eea;
+            margin: 30px 0;
+        }
+
+        footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <span>🧹</span>
+                Cuban Technology Cleaner
+            </a>
+        </nav>
+    </header>
+
+    <div class="content">
+        <h1>Política de Privacidad</h1>
+        <p class="last-updated">Última actualización: 26 de noviembre de 2025</p>
+
+        <div class="highlight-box">
+            <strong>Resumen:</strong> Respetamos tu privacidad. Recopilamos solo la información necesaria para proporcionar el servicio. No vendemos tus datos.
+        </div>
+
+        <h2>1. Información que Recopilamos</h2>
+        
+        <h3>1.1 Información de Cuenta</h3>
+        <p>Cuando creas una cuenta, recopilamos:</p>
+        <ul>
+            <li>Nombre</li>
+            <li>Dirección de email</li>
+            <li>Contraseña (encriptada)</li>
+            <li>Plan de suscripción</li>
+        </ul>
+
+        <h3>1.2 Información de Pago</h3>
+        <p>Los pagos se procesan a través de Stripe. No almacenamos información de tarjetas de crédito. Stripe maneja toda la información de pago de forma segura.</p>
+
+        <h3>1.3 Información de Uso</h3>
+        <p>Recopilamos información sobre cómo usas la aplicación:</p>
+        <ul>
+            <li>Funciones utilizadas</li>
+            <li>Frecuencia de uso</li>
+            <li>Errores y diagnósticos</li>
+        </ul>
+
+        <h3>1.4 Información del Sistema</h3>
+        <p>Para mejorar el software, recopilamos:</p>
+        <ul>
+            <li>Versión del sistema operativo</li>
+            <li>Configuración de hardware (solo información general)</li>
+            <li>Logs de errores</li>
+        </ul>
+
+        <h2>2. Cómo Usamos tu Información</h2>
+        <p>Usamos tu información para:</p>
+        <ul>
+            <li>Proporcionar y mantener el servicio</li>
+            <li>Procesar pagos y suscripciones</li>
+            <li>Enviar notificaciones importantes del servicio</li>
+            <li>Mejorar y optimizar el software</li>
+            <li>Proporcionar soporte técnico</li>
+            <li>Prevenir fraude y abuso</li>
+        </ul>
+
+        <h2>3. Compartir Información</h2>
+        <p>NO vendemos tu información personal. Compartimos información solo con:</p>
+        
+        <h3>3.1 Proveedores de Servicios</h3>
+        <ul>
+            <li><strong>Stripe:</strong> Para procesar pagos</li>
+            <li><strong>MongoDB:</strong> Para almacenar datos de cuenta</li>
+            <li><strong>Render:</strong> Para hosting del backend</li>
+        </ul>
+
+        <h3>3.2 Requisitos Legales</h3>
+        <p>Podemos divulgar información si es requerido por ley o para proteger nuestros derechos.</p>
+
+        <h2>4. Seguridad de Datos</h2>
+        <p>Implementamos medidas de seguridad para proteger tu información:</p>
+        <ul>
+            <li>Contraseñas encriptadas con bcrypt</li>
+            <li>Conexiones HTTPS/SSL</li>
+            <li>Base de datos segura</li>
+            <li>Autenticación con tokens JWT</li>
+        </ul>
+
+        <h2>5. Retención de Datos</h2>
+        <p>Conservamos tu información mientras:</p>
+        <ul>
+            <li>Tu cuenta esté activa</li>
+            <li>Sea necesario para proporcionar servicios</li>
+            <li>Sea requerido por ley</li>
+        </ul>
+
+        <h2>6. Tus Derechos</h2>
+        <p>Tienes derecho a:</p>
+        <ul>
+            <li><strong>Acceder:</strong> Ver qué información tenemos sobre ti</li>
+            <li><strong>Corregir:</strong> Actualizar información incorrecta</li>
+            <li><strong>Eliminar:</strong> Solicitar la eliminación de tu cuenta</li>
+            <li><strong>Exportar:</strong> Obtener una copia de tus datos</li>
+            <li><strong>Objetar:</strong> Oponerte al procesamiento de datos</li>
+        </ul>
+
+        <h2>7. Cookies y Tecnologías Similares</h2>
+        <p>Usamos tecnologías de almacenamiento local para:</p>
+        <ul>
+            <li>Mantener tu sesión activa</li>
+            <li>Recordar preferencias</li>
+            <li>Mejorar la experiencia del usuario</li>
+        </ul>
+
+        <h2>8. Privacidad de Menores</h2>
+        <p>Cuban Technology Cleaner no está dirigido a menores de 13 años. No recopilamos intencionalmente información de niños.</p>
+
+        <h2>9. Transferencias Internacionales</h2>
+        <p>Tu información puede ser transferida y almacenada en servidores ubicados fuera de tu país. Tomamos medidas para asegurar que tus datos estén protegidos.</p>
+
+        <h2>10. Cambios a esta Política</h2>
+        <p>Podemos actualizar esta política periódicamente. Te notificaremos de cambios significativos por email.</p>
+
+        <h2>11. Contacto</h2>
+        <p>Si tienes preguntas sobre privacidad, contáctanos:</p>
+        <p><strong>Email:</strong> support@WindowsCleanerPro.com</p>
+
+        <div class="highlight-box">
+            <strong>Tu Control:</strong> Puedes actualizar tus preferencias de privacidad o eliminar tu cuenta en cualquier momento desde la configuración de la aplicación.
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Cuban Technology Cleaner. Designed by Pedro IT Solutions.</p>
+        <p><a href="index.html">Inicio</a> | <a href="terms.html">Términos</a> | <a href="contact.html">Contacto</a></p>
+    </footer>
+</body>
+</html>

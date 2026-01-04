@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago Cancelado - Cuban Technology Cleaner</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+        }
+
+        .cancel-container {
+            background: white;
+            padding: 60px;
+            border-radius: 30px;
+            box-shadow: 0 30px 80px rgba(0,0,0,0.3);
+            text-align: center;
+            max-width: 600px;
+            width: 100%;
+        }
+
+        .cancel-icon {
+            font-size: 100px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 42px;
+            color: #ff6b6b;
+            margin-bottom: 20px;
+            font-weight: 800;
+        }
+
+        p {
+            font-size: 18px;
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 30px;
+        }
+
+        .info-box {
+            background: #fff5f5;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 30px 0;
+            border-left: 5px solid #ff6b6b;
+        }
+
+        .info-box h3 {
+            color: #ff6b6b;
+            margin-bottom: 15px;
+        }
+
+        .info-box p {
+            margin-bottom: 0;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 18px 45px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 18px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin: 10px;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-secondary {
+            background: white;
+            color: #667eea;
+            border: 2px solid #667eea;
+        }
+
+        .footer-text {
+            margin-top: 40px;
+            font-size: 14px;
+            color: #888;
+        }
+
+        @media (max-width: 768px) {
+            .cancel-container {
+                padding: 40px 30px;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cancel-container">
+        <div class="cancel-icon">❌</div>
+        <h1>Pago Cancelado</h1>
+        <p>Has cancelado el proceso de pago. No se ha realizado ningún cargo a tu tarjeta.</p>
+
+        <div class="info-box">
+            <h3>💡 ¿Cambiaste de opinión?</h3>
+            <p>Puedes intentar nuevamente cuando lo desees. Si tuviste algún problema, contáctanos.</p>
+        </div>
+
+        <a href="pricing.html" class="btn">Ver Planes Nuevamente</a>
+        <a href="index.html" class="btn btn-secondary">Volver al Inicio</a>
+
+        <p class="footer-text">
+            ¿Necesitas ayuda? Contacta con soporte: support@WindowsCleanerPro.com
+        </p>
+    </div>
+
+    <script>
+        console.log('❌ Payment cancelled');
+        console.log('Designed by Pedro IT Solutions');
+    </script>
+</body>
+</html>

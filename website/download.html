@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descargar - Cuban Technology Cleaner</title>
+    <meta name="description" content="Descarga Cuban Technology Cleaner gratis. Compatible con Windows 10 y 11.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 30px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 24px;
+            font-weight: 700;
+            color: white;
+            text-decoration: none;
+        }
+
+        .logo span {
+            font-size: 30px;
+            margin-right: 10px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: opacity 0.3s;
+        }
+
+        .nav-links a:hover {
+            opacity: 0.8;
+        }
+
+        .cta-button {
+            background: white;
+            color: #667eea;
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: transform 0.3s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+        }
+
+        .download-hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 150px 30px 80px;
+            text-align: center;
+        }
+
+        .download-hero h1 {
+            font-size: 48px;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .download-hero p {
+            font-size: 20px;
+            opacity: 0.95;
+            max-width: 600px;
+            margin: 0 auto 40px;
+        }
+
+        .download-section {
+            padding: 80px 30px;
+            background: #f8f9fa;
+        }
+
+        .download-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .download-card {
+            background: white;
+            padding: 60px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .download-icon {
+            font-size: 80px;
+            margin-bottom: 30px;
+        }
+
+        .download-card h2 {
+            font-size: 32px;
+            margin-bottom: 15px;
+            color: #667eea;
+        }
+
+        .version-info {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 18px;
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 20px 60px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin-bottom: 20px;
+            cursor: pointer;
+            border: none;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.4);
+        }
+
+        .download-size {
+            color: #888;
+            font-size: 14px;
+        }
+
+        .download-note {
+            margin-top: 40px;
+            padding: 30px;
+            background: #f0f4ff;
+            border-radius: 15px;
+            border-left: 5px solid #667eea;
+        }
+
+        .download-note h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+
+        .download-note p {
+            color: #666;
+            line-height: 1.8;
+        }
+
+        .download-note a {
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        .requirements-section {
+            padding: 80px 30px;
+            background: white;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 42px;
+            font-weight: 800;
+            margin-bottom: 20px;
+            color: #667eea;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 20px;
+            color: #666;
+            margin-bottom: 60px;
+        }
+
+        .requirements-grid {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .requirement-card {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .requirement-card h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+
+        .requirement-card p {
+            color: #666;
+            line-height: 1.8;
+        }
+
+        .installation-section {
+            padding: 80px 30px;
+            background: #f8f9fa;
+        }
+
+        .steps-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .step {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        .step-number {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: 800;
+            flex-shrink: 0;
+        }
+
+        .step-content h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .step-content p {
+            color: #666;
+            line-height: 1.8;
+        }
+
+        footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 60px 30px 30px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-section h3 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: #667eea;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 12px;
+        }
+
+        .footer-section a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-section a:hover {
+            color: #667eea;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid #333;
+            color: #888;
+        }
+
+        @media (max-width: 768px) {
+            .download-hero h1 {
+                font-size: 36px;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .download-card {
+                padding: 40px 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <span>🧹</span>
+                Cuban Technology Cleaner
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pricing.html">Precios</a></li>
+                <li><a href="download.html">Descargar</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+            <a href="pricing.html" class="cta-button">Ver Planes</a>
+        </nav>
+    </header>
+
+    <section class="download-hero">
+        <h1>Descarga Cuban Technology Cleaner</h1>
+        <p>Instalación rápida y sencilla. Compatible con Windows 10 y 11.</p>
+    </section>
+
+    <section class="download-section">
+        <div class="download-container">
+            <div class="download-card">
+                <div class="download-icon">💾</div>
+                <h2>Cuban Technology Cleaner</h2>
+                <div class="version-info">
+                    Versión 2.0.1 | Windows 10/11 (64-bit)
+                </div>
+                <button class="download-btn" onclick="downloadApp()">
+                    Descargar Ahora (Gratis)
+                </button>
+                <div class="download-size">Tamaño: ~158 MB</div>
+
+                <div class="download-note">
+                    <h3>📌 Nota Importante</h3>
+                    <p>Descarga gratis y accede a todas las funciones del plan FREE. Para desbloquear funciones PRO y ENTERPRISE, visita nuestra <a href="pricing.html">página de precios</a>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="requirements-section">
+        <h2 class="section-title">Requisitos del Sistema</h2>
+        <p class="section-subtitle">Asegúrate de que tu PC cumpla con estos requisitos</p>
+        
+        <div class="requirements-grid">
+            <div class="requirement-card">
+                <h3>💻 Sistema Operativo</h3>
+                <p>Windows 10 (64-bit) o superior<br>Windows 11 recomendado</p>
+            </div>
+
+            <div class="requirement-card">
+                <h3>⚙️ Procesador</h3>
+                <p>Intel Core i3 o equivalente<br>2.0 GHz o superior</p>
+            </div>
+
+            <div class="requirement-card">
+                <h3>💾 Memoria RAM</h3>
+                <p>Mínimo: 4 GB<br>Recomendado: 8 GB o más</p>
+            </div>
+
+            <div class="requirement-card">
+                <h3>📀 Espacio en Disco</h3>
+                <p>200 MB para instalación<br>Espacio adicional para operación</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="installation-section">
+        <h2 class="section-title">Guía de Instalación</h2>
+        <p class="section-subtitle">Sigue estos simples pasos</p>
+        
+        <div class="steps-container">
+            <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h3>Descarga el Instalador</h3>
+                    <p>Haz click en el botón "Descargar Ahora" y guarda el archivo en tu PC.</p>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h3>Ejecuta el Instalador</h3>
+                    <p>Haz doble click en el archivo descargado. Windows Defender puede solicitar confirmación.</p>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h3>Sigue el Asistente</h3>
+                    <p>El asistente de instalación te guiará. Solo toma unos segundos.</p>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <h3>Ejecuta como Administrador</h3>
+                    <p>Para usar todas las herramientas, haz click derecho en el icono y selecciona "Ejecutar como administrador".</p>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-number">5</div>
+                <div class="step-content">
+                    <h3>¡Listo para Optimizar!</h3>
+                    <p>Crea tu cuenta gratuita y comienza a limpiar y optimizar tu PC.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Cuban Technology Cleaner</h3>
+                <p>Herramienta profesional de optimización para Windows 11.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Enlaces</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="pricing.html">Precios</a></li>
+                    <li><a href="download.html">Descargar</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Legal</h3>
+                <ul>
+                    <li><a href="terms.html">Términos de Servicio</a></li>
+                    <li><a href="privacy.html">Política de Privacidad</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <ul>
+                    <li>Email: support@WindowsCleanerPro.com</li>
+                    <li>Soporte técnico disponible</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Cuban Technology Cleaner. Designed by Pedro IT Solutions. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        function downloadApp() {
+            // Descarga directa del instalador desde GitHub Releases v2.0.1
+            window.location.href = '/downloads/CubanTechnologyCleaner.exe';
+        }
+
+        console.log('Cuban Technology Cleaner v2.0.1');
+        console.log('Designed by Pedro IT Solutions');
+    </script>
+</body>
+</html>
